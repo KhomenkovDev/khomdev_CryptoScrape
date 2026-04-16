@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandMonitor | Modern Reputation Insight</title>
+    <meta name="description" content="AI-powered brand sentiment and competitive intelligence platform. Scrape and analyze real data from X, Instagram, Google, and news sources.">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BrandMonitor</h1>
+            <p class="tagline">AI-POWERED SENTIMENT &amp; STRATEGY ENGINE</p>
+            <div id="demo-badge" class="demo-badge" style="display: none;">DEMO MODE ACTIVE</div>
+        </header>
+
+        <!-- ── Social Accounts Panel ─────────────────────────────── -->
+        <section class="social-accounts-section" id="social-accounts-section">
+            <div class="social-accounts-header" id="social-accounts-toggle">
+                <span class="social-accounts-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+                    Social Accounts
+                </span>
+                <div class="social-status-pills" id="social-status-pills">
+                    <span class="social-pill" id="x-status-pill">
+                        <span class="pill-dot disconnected"></span> X (Twitter)
+                    </span>
+                    <span class="social-pill" id="ig-status-pill">
+                        <span class="pill-dot disconnected"></span> Instagram
+                    </span>
+                </div>
+                <span class="toggle-arrow" id="toggle-arrow">▼</span>
+            </div>
+
+            <div class="social-accounts-body" id="social-accounts-body">
+                <p class="social-accounts-hint">
+                    Connect your accounts so BrandMonitor can scrape <strong>real posts</strong> from X and Instagram.
+                    Credentials are used only to log in — never stored or shared externally.
+                </p>
+
+                <div class="social-platforms-grid">
+                    <!-- X (Twitter) -->
+                    <div class="social-platform-card glass-card" id="x-platform-card">
+                        <div class="platform-card-header">
+                            <div class="platform-icon x-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.254 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </div>
+                            <div>
+                                <h4>X (Twitter)</h4>
+                                <span class="platform-connection-status" id="x-connection-label">Not connected</span>
+                            </div>
+                            <button class="disconnect-btn" id="x-disconnect-btn" onclick="disconnectPlatform('x')" style="display:none;">Disconnect</button>
+                        </div>
+                        <div class="platform-login-form" id="x-form">
+                            <input type="text" id="x-username" placeholder="Username or email" autocomplete="off">
+                            <input type="password" id="x-password" placeholder="Password">
+                            <button class="connect-btn" id="x-connect-btn" onclick="connectPlatform('x')">
+                                <span class="btn-text">Connect X Account</span>
+                                <span class="btn-spinner" style="display:none;"></span>
+                            </button>
+                        </div>
+                        <div class="platform-connected-msg" id="x-connected-msg" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00ff88" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Session active — real tweets will be scraped
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="social-platform-card glass-card" id="ig-platform-card">
+                        <div class="platform-card-header">
+                            <div class="platform-icon ig-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <span class="platform-connection-status" id="ig-connection-label">Not connected</span>
+                            </div>
+                            <button class="disconnect-btn" id="ig-disconnect-btn" onclick="disconnectPlatform('instagram')" style="display:none;">Disconnect</button>
+                        </div>
+                        <div class="platform-login-form" id="ig-form">
+                            <input type="text" id="ig-username" placeholder="Username" autocomplete="off">
+                            <input type="password" id="ig-password" placeholder="Password">
+                            <button class="connect-btn" id="ig-connect-btn" onclick="connectPlatform('instagram')">
+                                <span class="btn-text">Connect Instagram Account</span>
+                                <span class="btn-spinner" style="display:none;"></span>
+                            </button>
+                        </div>
+                        <div class="platform-connected-msg" id="ig-connected-msg" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00ff88" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Session active — real posts will be scraped
+                        </div>
+                    </div>
+                </div>
+
+                <div class="connect-notice">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    A visible browser window will open for login. You may need to solve a CAPTCHA manually. The session is saved locally and reused on future runs.
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Analysis Form ─────────────────────────────────────── -->
+        <section class="search-section">
+            <div class="glass-card main-search">
+                <div class="input-group">
+
+                    <!-- Brand autocomplete + competitor row -->
+                    <div class="main-inputs">
+                        <div class="brand-search-wrapper" id="brand-search-wrapper">
+                            <div class="brand-input-row">
+                                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                <input
+                                    type="text"
+                                    id="brand-name"
+                                    placeholder="Search for a brand (e.g. Apple, Nike, Tesla)..."
+                                    autocomplete="off"
+                                    aria-label="Brand name"
+                                    aria-autocomplete="list"
+                                    aria-controls="brand-suggestions"
+                                >
+                                <button class="brand-clear-btn" id="brand-clear-btn" style="display:none;" title="Clear">✕</button>
+                            </div>
+                            <div class="brand-suggestions" id="brand-suggestions" role="listbox" aria-label="Brand suggestions"></div>
+                        </div>
+                        <div class="brand-search-wrapper" id="competitor-search-wrapper">
+                            <div class="brand-input-row">
+                                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                <input
+                                    type="text"
+                                    id="competitor-name"
+                                    placeholder="Competitor (Optional)..."
+                                    autocomplete="off"
+                                    aria-label="Competitor name"
+                                    aria-autocomplete="list"
+                                    aria-controls="competitor-suggestions"
+                                >
+                                <button class="brand-clear-btn" id="competitor-clear-btn" style="display:none;" title="Clear">✕</button>
+                            </div>
+                            <div class="brand-suggestions" id="competitor-suggestions" role="listbox" aria-label="Competitor suggestions"></div>
+                        </div>
+                    </div>
+
+                    <!-- Brand info card — appears after picking a suggestion -->
+                    <div class="brand-info-card" id="brand-info-card" style="display:none;">
+                        <img class="brand-info-thumb" id="brand-info-thumb" src="" alt="" style="display:none;">
+                        <div class="brand-info-text">
+                            <div class="brand-info-meta">
+                                <span class="brand-info-title" id="brand-info-title"></span>
+                                <span class="brand-info-badge" id="brand-info-desc"></span>
+                            </div>
+                            <p class="brand-info-extract" id="brand-info-extract"></p>
+                        </div>
+                        <a class="brand-info-wiki" id="brand-info-url" href="#" target="_blank" rel="noopener" title="Open on Wikipedia">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="platform" value="google" checked> Google Reviews
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="platform" value="news" checked> Web News
+                        </label>
+                        <label class="checkbox-item" id="x-checkbox-label">
+                            <input type="checkbox" name="platform" value="x" id="x-checkbox"> X (Twitter)
+                        </label>
+                        <label class="checkbox-item" id="ig-checkbox-label">
+                            <input type="checkbox" name="platform" value="instagram" id="ig-checkbox"> Instagram
+                        </label>
+                    </div>
+                    <button id="analyze-btn">GENERATE REPUTATION REPORT</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Loader ─────────────────────────────────────────────── -->
+        <div id="loader" class="loader-container">
+            <div class="loader"></div>
+            <p style="margin-top: 1rem; color: var(--accent-primary); letter-spacing: 1px;">AGGREGATING MARKET DATA...</p>
+        </div>
+
+        <!-- ── Results ───────────────────────────────────────────── -->
+        <main id="results-area" style="display: none;">
+            <div class="report-header">
+                <div>
+                    <h2>Analysis for: <span id="display-brand-name" style="color: var(--accent-primary);">Brand</span></h2>
+                    <p id="overall-sentiment-text" style="color: var(--text-secondary); margin-top: 0.5rem;"></p>
+                </div>
+                <div class="sentiment-gauge">
+                    <canvas id="sentimentChart" width="150" height="150"></canvas>
+                    <div class="gauge-value" id="gauge-score">0</div>
+                </div>
+            </div>
+
+            <div class="results-grid" id="platform-results"></div>
+
+            <section class="secondary-grid">
+                <div class="glass-card competitor-card" id="competitor-box" style="display: none;">
+                    <h3>Competitor Comparison</h3>
+                    <div id="competitor-content"></div>
+                </div>
+
+                <div class="glass-card roadmap-card">
+                    <h3>AI Strategic Roadmap</h3>
+                    <div id="marketing-roadmap-list"></div>
+                </div>
+            </section>
+
+            <section class="suggestions-section">
+                <h3>Key Strategic Insights</h3>
+                <div id="suggestions-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

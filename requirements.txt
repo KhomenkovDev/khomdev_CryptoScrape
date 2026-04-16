@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+playwright
+google-genai
+python-dotenv
+beautifulsoup4
+pydantic
+pydantic-settings
+loguru
+httpx
+pytest
+pytest-asyncio
