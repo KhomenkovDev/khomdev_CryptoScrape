@@ -1,0 +1,683 @@
+2026-04-15 19:04:06.296 | INFO     | __main__:analyze_brand:113 - Starting analysis for brand: bohemia
+2026-04-15 19:04:06.298 | INFO     | __main__:analyze_brand:117 - Scraping platforms: ['google', 'news', 'x', 'instagram']
+2026-04-15 19:04:13.800 | INFO     | scraper:scrape:142 - Targeting competitor: lays
+2026-04-15 19:04:13.802 | DEBUG    | scraper:_scrape_google_reviews:161 - Scraping Google Reviews for bohemia
+2026-04-15 19:04:13.815 | DEBUG    | scraper:_scrape_x:205 - Scraping X for bohemia
+2026-04-15 19:04:13.816 | WARNING  | scraper:_scrape_x:207 - No X session found. Returning placeholder — connect account in Social Accounts tab.
+2026-04-15 19:04:13.816 | DEBUG    | scraper:_scrape_instagram:243 - Scraping Instagram for bohemia
+2026-04-15 19:04:13.816 | WARNING  | scraper:_scrape_instagram:245 - No Instagram session found. Returning placeholder.
+2026-04-15 19:04:13.817 | DEBUG    | scraper:_scrape_google_news:182 - Scraping Google News for bohemia
+2026-04-15 19:04:13.828 | DEBUG    | scraper:_scrape_google_news:182 - Scraping Google News for lays
+2026-04-15 19:04:20.640 | WARNING  | scraper:_scrape_google_news:197 - Google News scrape failed for bohemia: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-15 19:04:20.701 | WARNING  | scraper:_scrape_google_news:197 - Google News scrape failed for lays: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-15 19:04:21.450 | WARNING  | scraper:_scrape_google_reviews:176 - Google Review scrape failed for bohemia: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-15 19:04:21.568 | INFO     | __main__:analyze_brand:120 - Sending data to AI Analyzer...
+2026-04-15 19:04:21.734 | INFO     | analyzer:analyze:50 - Executing in DEMO_MODE: Generating mock analysis.
+2026-04-15 19:04:23.739 | INFO     | __main__:analyze_brand:124 - Analysis complete.
+2026-04-15 21:06:05.950 | INFO     | __main__:social_connect:91 - Starting login flow for platform: instagram
+2026-04-15 21:07:59.823 | INFO     | __main__:analyze_brand:113 - Starting analysis for brand: lays
+2026-04-15 21:07:59.833 | INFO     | __main__:analyze_brand:117 - Scraping platforms: ['google', 'news']
+2026-04-15 21:08:01.752 | DEBUG    | scraper:_scrape_google_reviews:161 - Scraping Google Reviews for lays
+2026-04-15 21:08:01.755 | DEBUG    | scraper:_scrape_google_news:182 - Scraping Google News for lays
+2026-04-15 21:08:08.430 | WARNING  | scraper:_scrape_google_news:197 - Google News scrape failed for lays: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-15 21:08:09.890 | WARNING  | scraper:_scrape_google_reviews:176 - Google Review scrape failed for lays: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-15 21:08:09.981 | INFO     | __main__:analyze_brand:120 - Sending data to AI Analyzer...
+2026-04-15 21:08:10.096 | INFO     | analyzer:analyze:50 - Executing in DEMO_MODE: Generating mock analysis.
+2026-04-15 21:08:12.099 | INFO     | __main__:analyze_brand:124 - Analysis complete.
+2026-04-15 21:21:06.148 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:09.626 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:11.070 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:12.607 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:13.259 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:14.553 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:15.353 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:21.174 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:22.817 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:21:23.397 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:22:03.832 | WARNING  | __main__:brand_search:140 - Brand search failed: Expecting value: line 1 column 1 (char 0)
+2026-04-15 21:24:56.715 | INFO     | __main__:brand_search:120 - Brand search request: query='ap'
+2026-04-15 21:24:57.195 | INFO     | __main__:brand_search:142 - Brand search results for 'ap': 8 items found
+2026-04-15 21:25:00.480 | INFO     | __main__:brand_search:120 - Brand search request: query='app'
+2026-04-15 21:25:00.983 | INFO     | __main__:brand_search:142 - Brand search results for 'app': 8 items found
+2026-04-15 21:25:01.765 | INFO     | __main__:brand_search:120 - Brand search request: query='apple'
+2026-04-15 21:25:02.047 | INFO     | __main__:brand_search:142 - Brand search results for 'apple': 8 items found
+2026-04-15 21:25:10.210 | INFO     | __main__:brand_search:120 - Brand search request: query='boh'
+2026-04-15 21:25:10.711 | INFO     | __main__:brand_search:142 - Brand search results for 'boh': 8 items found
+2026-04-15 21:25:11.261 | INFO     | __main__:brand_search:120 - Brand search request: query='bohemia'
+2026-04-15 21:25:11.837 | INFO     | __main__:brand_search:142 - Brand search results for 'bohemia': 8 items found
+2026-04-15 21:25:15.486 | INFO     | __main__:brand_info:155 - Brand info request: name='Bohemia'
+2026-04-15 21:25:15.902 | INFO     | __main__:brand_info:166 - Brand info fetched successfully for 'Bohemia'
+2026-04-15 21:25:31.089 | INFO     | __main__:brand_search:120 - Brand search request: query='micha'
+2026-04-15 21:25:31.477 | INFO     | __main__:brand_search:120 - Brand search request: query='michael'
+2026-04-15 21:25:31.907 | INFO     | __main__:brand_search:142 - Brand search results for 'micha': 8 items found
+2026-04-15 21:25:31.911 | INFO     | __main__:brand_search:142 - Brand search results for 'michael': 8 items found
+2026-04-15 21:25:34.456 | INFO     | __main__:brand_info:155 - Brand info request: name='Michael Jackson'
+2026-04-15 21:25:34.765 | INFO     | __main__:brand_info:166 - Brand info fetched successfully for 'Michael Jackson'
+2026-04-15 21:26:17.309 | INFO     | __main__:brand_search:120 - Brand search request: query='as'
+2026-04-15 21:26:17.781 | INFO     | __main__:brand_search:142 - Brand search results for 'as': 8 items found
+2026-04-15 21:26:23.099 | INFO     | __main__:brand_search:120 - Brand search request: query='ba'
+2026-04-15 21:26:23.490 | INFO     | __main__:brand_search:142 - Brand search results for 'ba': 8 items found
+2026-04-15 21:26:27.529 | INFO     | __main__:brand_info:155 - Brand info request: name='Basketball'
+2026-04-15 21:26:27.800 | INFO     | __main__:brand_info:166 - Brand info fetched successfully for 'Basketball'
+2026-04-15 21:26:51.771 | INFO     | __main__:brand_search:120 - Brand search request: query='mi'
+2026-04-15 21:26:52.625 | INFO     | __main__:brand_search:142 - Brand search results for 'mi': 8 items found
+2026-04-15 21:36:45.640 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bo'
+2026-04-15 21:36:46.626 | INFO     | __main__:brand_search:162 - Smart search results for 'bo': 10 items found
+2026-04-15 21:36:52.206 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='boh'
+2026-04-15 21:36:52.811 | INFO     | __main__:brand_search:162 - Smart search results for 'boh': 10 items found
+2026-04-15 21:36:58.045 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bohem'
+2026-04-15 21:36:58.545 | INFO     | __main__:brand_search:162 - Smart search results for 'bohem': 10 items found
+2026-04-15 21:36:58.584 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bohemia'
+2026-04-15 21:36:58.967 | INFO     | __main__:brand_search:162 - Smart search results for 'bohemia': 10 items found
+2026-04-15 21:37:18.760 | INFO     | __main__:brand_info:175 - Brand info request: name='Adolf Hitler'
+2026-04-15 21:37:19.125 | INFO     | __main__:brand_info:186 - Brand info fetched successfully for 'Adolf Hitler'
+2026-04-15 21:44:05.151 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='boh'
+2026-04-15 21:44:05.722 | INFO     | __main__:brand_search:180 - Strict search results for 'boh': 0 items found
+2026-04-15 21:44:07.415 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bohemia'
+2026-04-15 21:44:07.863 | INFO     | __main__:brand_search:180 - Strict search results for 'bohemia': 2 items found
+2026-04-15 21:44:10.108 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bohemi'
+2026-04-15 21:44:10.674 | INFO     | __main__:brand_search:180 - Strict search results for 'bohemi': 0 items found
+2026-04-15 21:44:10.858 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='bo'
+2026-04-15 21:44:11.797 | INFO     | __main__:brand_search:180 - Strict search results for 'bo': 0 items found
+2026-04-15 21:44:12.345 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='apple'
+2026-04-15 21:44:13.002 | INFO     | __main__:brand_search:180 - Strict search results for 'apple': 2 items found
+2026-04-15 21:44:16.572 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='ap'
+2026-04-15 21:44:17.229 | INFO     | __main__:brand_search:180 - Strict search results for 'ap': 0 items found
+2026-04-15 21:44:22.546 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='ufc'
+2026-04-15 21:44:23.004 | INFO     | __main__:brand_search:180 - Strict search results for 'ufc': 1 items found
+2026-04-15 21:44:24.896 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='uf'
+2026-04-15 21:44:25.416 | INFO     | __main__:brand_search:180 - Strict search results for 'uf': 1 items found
+2026-04-15 21:44:31.950 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='coca'
+2026-04-15 21:44:32.481 | INFO     | __main__:brand_search:180 - Strict search results for 'coca': 0 items found
+2026-04-15 21:44:34.680 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='coca cola'
+2026-04-15 21:44:35.147 | INFO     | __main__:brand_search:180 - Strict search results for 'coca cola': 3 items found
+2026-04-15 21:44:38.308 | INFO     | __main__:brand_info:193 - Brand info request: name='The Coca-Cola Company'
+2026-04-15 21:44:38.682 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'The Coca-Cola Company'
+2026-04-15 21:44:49.839 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: The Coca-Cola Company
+2026-04-15 21:44:49.839 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-15 21:44:51.747 | INFO     | scraper:scrape:202 - Targeting competitor: pepsi
+2026-04-15 21:44:51.748 | DEBUG    | scraper:_scrape_google_reviews:221 - Scraping Google Reviews for The Coca-Cola Company
+2026-04-15 21:44:51.753 | DEBUG    | scraper:_scrape_google_news:242 - Scraping Google News for The Coca-Cola Company
+2026-04-15 21:44:51.756 | DEBUG    | scraper:_scrape_google_news:242 - Scraping Google News for pepsi
+2026-04-15 21:44:59.320 | WARNING  | scraper:_scrape_google_news:257 - Google News scrape failed for The Coca-Cola Company: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-15 21:44:59.439 | WARNING  | scraper:_scrape_google_news:257 - Google News scrape failed for pepsi: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-15 21:45:00.199 | WARNING  | scraper:_scrape_google_reviews:236 - Google Review scrape failed for The Coca-Cola Company: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-15 21:45:00.317 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-15 21:45:00.429 | INFO     | analyzer:analyze:50 - Executing in DEMO_MODE: Generating mock analysis.
+2026-04-15 21:45:02.431 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 16:02:16.236 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:02:23.084 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:02:54.756 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:03:50.357 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:03:57.632 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:04:16.229 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:04:23.332 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:04:29.340 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:04:46.564 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:09:07.209 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:09:12.377 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:09:46.151 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:27:33.487 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:27:39.427 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:27:55.129 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:28:25.863 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:28:31.599 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:29:03.054 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:32:39.748 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:32:44.557 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:33:16.305 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:37:24.483 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:37:29.427 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:38:02.900 | ERROR    | scraper:_login_instagram:172 - Instagram login exception: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2026-04-16 16:44:05.878 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:44:10.025 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:44:14.635 | INFO     | scraper:_login_instagram:135 - Clicked 'Allow all cookies'
+2026-04-16 16:44:44.755 | ERROR    | scraper:_login_instagram:196 - Instagram login exception: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button[type=\"submit\"], button:has-text(\"Log in\"), button:has-text(\"Log In\")")
+
+2026-04-16 16:46:20.943 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:46:25.798 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:46:29.079 | INFO     | scraper:_login_instagram:135 - Clicked 'Allow all cookies'
+2026-04-16 16:46:32.327 | INFO     | scraper:_login_instagram:174 - Submitted login, waiting for redirect or challenges...
+2026-04-16 16:46:46.934 | ERROR    | scraper:_login_instagram:203 - Instagram login exception: Locator.count: Target page, context or browser has been closed
+2026-04-16 16:54:26.753 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:54:30.861 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:54:34.141 | INFO     | scraper:_login_instagram:135 - Clicked 'Allow all cookies'
+2026-04-16 16:54:37.442 | INFO     | scraper:_login_instagram:174 - Submitted login, waiting for redirect or challenges...
+2026-04-16 16:55:08.153 | ERROR    | scraper:_login_instagram:203 - Instagram login exception: Timed out waiting for Instagram home screen. Check the browser window for any blocks or verification steps.
+2026-04-16 16:58:28.790 | INFO     | __main__:social_connect:92 - Starting login flow for platform: instagram
+2026-04-16 16:58:34.101 | INFO     | scraper:_login_instagram:126 - Navigating to Instagram login for altyn_tolobas...
+2026-04-16 16:58:37.650 | INFO     | scraper:_login_instagram:135 - Clicked 'Allow all cookies'
+2026-04-16 16:58:44.068 | INFO     | scraper:_login_instagram:174 - Submitted login, waiting for redirect or challenges...
+2026-04-16 16:58:53.532 | ERROR    | scraper:_login_instagram:203 - Instagram login exception: Locator.count: Target page, context or browser has been closed
+2026-04-16 17:00:15.548 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='klays'
+2026-04-16 17:00:16.153 | INFO     | __main__:brand_search:180 - Strict search results for 'klays': 0 items found
+2026-04-16 17:00:16.299 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='kl'
+2026-04-16 17:00:16.819 | INFO     | __main__:brand_search:180 - Strict search results for 'kl': 0 items found
+2026-04-16 17:00:17.558 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 17:00:18.051 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 17:00:20.355 | INFO     | __main__:brand_info:193 - Brand info request: name='Lay’s'
+2026-04-16 17:00:20.816 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Lay’s'
+2026-04-16 17:09:45.096 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='prin'
+2026-04-16 17:09:45.691 | INFO     | __main__:brand_search:180 - Strict search results for 'prin': 0 items found
+2026-04-16 17:09:47.195 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pringles'
+2026-04-16 17:09:47.700 | INFO     | __main__:brand_search:180 - Strict search results for 'pringles': 1 items found
+2026-04-16 17:09:48.894 | INFO     | __main__:brand_info:193 - Brand info request: name='Pringles'
+2026-04-16 17:09:49.288 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Pringles'
+2026-04-16 17:09:52.034 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='la'
+2026-04-16 17:09:52.548 | INFO     | __main__:brand_search:180 - Strict search results for 'la': 0 items found
+2026-04-16 17:09:52.665 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 17:09:53.141 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 17:09:54.544 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='la'
+2026-04-16 17:09:55.135 | INFO     | __main__:brand_search:180 - Strict search results for 'la': 0 items found
+2026-04-16 17:09:58.733 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 17:09:59.175 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 17:10:03.425 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='la'
+2026-04-16 17:10:04.087 | INFO     | __main__:brand_search:180 - Strict search results for 'la': 0 items found
+2026-04-16 17:11:20.689 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='sd'
+2026-04-16 17:11:21.304 | INFO     | __main__:brand_search:180 - Strict search results for 'sd': 0 items found
+2026-04-16 17:11:21.501 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='sdf'
+2026-04-16 17:11:21.914 | INFO     | __main__:brand_search:180 - Strict search results for 'sdf': 1 items found
+2026-04-16 17:15:27.579 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='fkf'
+2026-04-16 17:15:27.899 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='fk'
+2026-04-16 17:15:28.101 | INFO     | __main__:brand_search:180 - Strict search results for 'fkf': 2 items found
+2026-04-16 17:15:28.277 | INFO     | __main__:brand_search:180 - Strict search results for 'fk': 0 items found
+2026-04-16 17:15:46.984 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='kds'
+2026-04-16 17:15:47.481 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='kd'
+2026-04-16 17:15:47.698 | INFO     | __main__:brand_search:180 - Strict search results for 'kds': 0 items found
+2026-04-16 17:15:47.939 | INFO     | __main__:brand_search:180 - Strict search results for 'kd': 1 items found
+2026-04-16 17:15:48.468 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='sd'
+2026-04-16 17:15:49.794 | INFO     | __main__:brand_search:180 - Strict search results for 'sd': 0 items found
+2026-04-16 17:19:06.020 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='jnjj'
+2026-04-16 17:19:06.521 | INFO     | __main__:brand_search:180 - Strict search results for 'jnjj': 0 items found
+2026-04-16 17:19:06.658 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='jn'
+2026-04-16 17:19:07.055 | INFO     | __main__:brand_search:180 - Strict search results for 'jn': 0 items found
+2026-04-16 17:42:53.145 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='prin'
+2026-04-16 17:42:53.850 | INFO     | __main__:brand_search:180 - Strict search results for 'prin': 0 items found
+2026-04-16 17:42:54.902 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pring'
+2026-04-16 17:42:55.465 | INFO     | __main__:brand_search:180 - Strict search results for 'pring': 0 items found
+2026-04-16 17:42:55.483 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pringles'
+2026-04-16 17:42:56.102 | INFO     | __main__:brand_search:180 - Strict search results for 'pringles': 1 items found
+2026-04-16 17:42:56.987 | INFO     | __main__:brand_info:193 - Brand info request: name='Pringles'
+2026-04-16 17:42:57.330 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Pringles'
+2026-04-16 17:42:59.304 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 17:42:59.885 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 17:43:04.675 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Pringles
+2026-04-16 17:43:04.675 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news', 'x', 'instagram']
+2026-04-16 17:43:06.782 | INFO     | scraper:scrape:233 - Targeting competitor: Lay’s
+2026-04-16 17:43:06.783 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Pringles
+2026-04-16 17:43:06.786 | DEBUG    | scraper:_scrape_x:296 - Scraping X for Pringles
+2026-04-16 17:43:06.786 | WARNING  | scraper:_scrape_x:298 - No X session found. Returning placeholder — connect account in Social Accounts tab.
+2026-04-16 17:43:06.787 | DEBUG    | scraper:_scrape_instagram:334 - Scraping Instagram for Pringles
+2026-04-16 17:43:06.787 | WARNING  | scraper:_scrape_instagram:336 - No Instagram session found. Returning placeholder.
+2026-04-16 17:43:06.788 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Pringles
+2026-04-16 17:43:06.791 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Lay’s
+2026-04-16 17:43:13.847 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Lay’s: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 17:43:13.900 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Pringles: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 17:43:14.654 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Pringles: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 17:43:14.736 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 17:43:14.823 | INFO     | analyzer:analyze:50 - Executing in DEMO_MODE: Generating mock analysis.
+2026-04-16 17:43:16.829 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 17:43:55.428 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='La'
+2026-04-16 17:43:56.106 | INFO     | __main__:brand_search:180 - Strict search results for 'La': 0 items found
+2026-04-16 17:43:57.156 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='xss'
+2026-04-16 17:43:57.591 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='xs'
+2026-04-16 17:43:57.808 | INFO     | __main__:brand_search:180 - Strict search results for 'xss': 0 items found
+2026-04-16 17:43:58.177 | INFO     | __main__:brand_search:180 - Strict search results for 'xs': 0 items found
+2026-04-16 17:45:05.609 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 17:45:06.147 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 17:45:06.557 | INFO     | __main__:brand_info:193 - Brand info request: name='Lay’s'
+2026-04-16 17:45:06.839 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Lay’s'
+2026-04-16 17:45:08.722 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pringles'
+2026-04-16 17:45:09.525 | INFO     | __main__:brand_search:180 - Strict search results for 'pringles': 1 items found
+2026-04-16 17:45:10.461 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Lay’s
+2026-04-16 17:45:10.461 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-16 17:45:12.519 | INFO     | scraper:scrape:233 - Targeting competitor: Pringles
+2026-04-16 17:45:12.520 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Lay’s
+2026-04-16 17:45:12.523 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Lay’s
+2026-04-16 17:45:12.534 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Pringles
+2026-04-16 17:45:19.607 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Lay’s: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 17:45:19.783 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Pringles: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 17:45:20.022 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Lay’s: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 17:45:20.137 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 17:45:20.235 | INFO     | analyzer:analyze:50 - Executing in DEMO_MODE: Generating mock analysis.
+2026-04-16 17:45:22.236 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 20:05:11.552 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='lays'
+2026-04-16 20:05:12.193 | INFO     | __main__:brand_search:180 - Strict search results for 'lays': 1 items found
+2026-04-16 20:05:13.510 | INFO     | __main__:brand_info:193 - Brand info request: name='Lay’s'
+2026-04-16 20:05:13.920 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Lay’s'
+2026-04-16 20:05:15.768 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pringles'
+2026-04-16 20:05:16.317 | INFO     | __main__:brand_search:180 - Strict search results for 'pringles': 1 items found
+2026-04-16 20:05:19.805 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Lay’s
+2026-04-16 20:05:19.805 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-16 20:05:21.745 | INFO     | scraper:scrape:233 - Targeting competitor: Pringles
+2026-04-16 20:05:21.746 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Lay’s
+2026-04-16 20:05:21.749 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Lay’s
+2026-04-16 20:05:21.753 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Pringles
+2026-04-16 20:05:28.517 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Pringles: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:05:28.617 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Lay’s: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:05:29.155 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Lay’s: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 20:05:29.253 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 20:05:29.804 | ERROR    | analyzer:analyze:98 - Gemini Analysis failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+2026-04-16 20:05:29.805 | ERROR    | __main__:analyze_brand:235 - Failed to analyze brand
+Traceback (most recent call last):
+
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/main.py", line 241, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=port)
+    │       │   │                         └ 8001
+    │       │   └ <fastapi.applications.FastAPI object at 0x10579f1d0>
+    │       └ <function run at 0x103d81620>
+    └ <module 'uvicorn' from '/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/uvic...
+
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/uvicorn/main.py", line 606, in run
+    server.run()
+    │      └ <function Server.run at 0x103d80e00>
+    └ <uvicorn.server.Server object at 0x10579f4d0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x103d59c60>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x103e22000>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x10579f4d0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x103d80ea0>
+           │           └ <uvicorn.server.Server object at 0x10579f4d0>
+           └ <function run at 0x102039a80>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x105863920>
+           │      └ <function Runner.run at 0x10213dbc0>
+           └ <asyncio.runners.Runner object at 0x105448cb0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at /Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.ve...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x10213b6a0>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x105448cb0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x10213b600>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x10213d440>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x102020f40>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x10579f710>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x10579f1d0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x10579f710>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x1059622a0>
+          └ <fastapi.applications.FastAPI object at 0x10579f1d0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x105a07c40>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x1059621e0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x1059622a0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x105a07c40>
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x10534c1d0>
+          │                            │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x105962240>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x1059621e0>
+          └ <function wrap_app_handling_exceptions at 0x103b511c0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x105962240>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x10579f0b0>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x105962240>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x10579f0b0>>
+          └ <fastapi.routing.APIRouter object at 0x10579f0b0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │     └ <function Route.handle at 0x103b52660>
+          └ APIRoute(path='/analyze', name='analyze_brand', methods=['POST'])
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │    └ <function request_response.<locals>.app at 0x1058d3600>
+          └ APIRoute(path='/analyze', name='analyze_brand', methods=['POST'])
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c7c0>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x1059627e0>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x10597c540>
+          └ <function wrap_app_handling_exceptions at 0x103b511c0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x10597c360>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x105a6d910>>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8001), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x10597c540>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x1059627e0>
+                     └ <function get_request_handler.<locals>.app at 0x1058d37e0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x103b80680>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'request': AnalysisRequest(brand_name='Lay’s', platforms=['google', 'news'], competitor_name='Pringles')}
+                 │         └ <function analyze_brand at 0x1058d36a0>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[ModelField(field_info=Body(Pydant...
+
+> File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/main.py", line 230, in analyze_brand
+    report = await analyzer.analyze(request.brand_name, scraped_data, request.competitor_name)
+                   │        │       │       │           │             │       └ 'Pringles'
+                   │        │       │       │           │             └ AnalysisRequest(brand_name='Lay’s', platforms=['google', 'news'], competitor_name='Pringles')
+                   │        │       │       │           └ {'google': ['Could not fetch reviews: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator("d...
+                   │        │       │       └ 'Lay’s'
+                   │        │       └ AnalysisRequest(brand_name='Lay’s', platforms=['google', 'news'], competitor_name='Pringles')
+                   │        └ <function BrandAnalyzer.analyze at 0x105706660>
+                   └ <analyzer.BrandAnalyzer object at 0x1059eae70>
+
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/analyzer.py", line 89, in analyze
+    response = self.client.models.generate_content(
+               │    │      └ <property object at 0x10570b9c0>
+               │    └ <google.genai.client.Client object at 0x105a9ac00>
+               └ <analyzer.BrandAnalyzer object at 0x1059eae70>
+
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/models.py", line 6276, in generate_content
+    response = self._generate_content(
+               │    └ <function Models._generate_content at 0x1056b8860>
+               └ <google.genai.models.Models object at 0x105e5d670>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/models.py", line 4730, in _generate_content
+    response = self._api_client.request(
+               │    │           └ <function BaseApiClient.request at 0x105605300>
+               │    └ <google.genai._api_client.BaseApiClient object at 0x105a9a390>
+               └ <google.genai.models.Models object at 0x105e5d670>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1537, in request
+    response = self._request(http_request, http_options, stream=False)
+               │    │        │             └ None
+               │    │        └ HttpRequest(headers={'Content-Type': 'application/json', 'x-goog-api-key': 'AIzaSyB35GGelOiQuiKaIMKRBX13IUrybNKE7X4', 'user-a...
+               │    └ <function BaseApiClient._request at 0x105605080>
+               └ <google.genai._api_client.BaseApiClient object at 0x105a9a390>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1332, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           │    │      │    │              │             └ False
+           │    │      │    │              └ HttpRequest(headers={'Content-Type': 'application/json', 'x-goog-api-key': 'AIzaSyB35GGelOiQuiKaIMKRBX13IUrybNKE7X4', 'user-a...
+           │    │      │    └ <function BaseApiClient._request_once at 0x105604fe0>
+           │    │      └ <google.genai._api_client.BaseApiClient object at 0x105a9a390>
+           │    └ <Retrying object at 0x105e5d430 (stop=<tenacity.stop.stop_after_attempt object at 0x105e5d460>, wait=<tenacity.wait.wait_none...
+           └ <google.genai._api_client.BaseApiClient object at 0x105a9a390>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         │    │                └ <RetryCallState 4389255024: attempt #1; slept for 0.0; last result: failed (ClientError 404 NOT_FOUND. {'error': {'code': 404...
+         │    └ <function BaseRetrying.iter at 0x10556ba60>
+         └ <Retrying object at 0x105e5d430 (stop=<tenacity.stop.stop_after_attempt object at 0x105e5d460>, wait=<tenacity.wait.wait_none...
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+             │      └ <RetryCallState 4389255024: attempt #1; slept for 0.0; last result: failed (ClientError 404 NOT_FOUND. {'error': {'code': 404...
+             └ <function BaseRetrying._post_stop_check_actions.<locals>.exc_check at 0x105e645e0>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          │         └ <function RetryError.reraise at 0x10556afc0>
+          └ RetryError(<Future at 0x103e221e0 state=finished raised ClientError>)
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          │    │            └ <function Future.result at 0x101f4a3e0>
+          │    └ <Future at 0x103e221e0 state=finished raised ClientError>
+          └ RetryError(<Future at 0x103e221e0 state=finished raised ClientError>)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           └ None
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+          └ None
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             │   │       └ {}
+             │   └ (HttpRequest(headers={'Content-Type': 'application/json', 'x-goog-api-key': 'AIzaSyB35GGelOiQuiKaIMKRBX13IUrybNKE7X4', 'user-...
+             └ <bound method BaseApiClient._request_once of <google.genai._api_client.BaseApiClient object at 0x105a9a390>>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1309, in _request_once
+    errors.APIError.raise_for_response(response)
+    │      │        │                  └ <Response [404 Not Found]>
+    │      │        └ <classmethod(<function APIError.raise_for_response at 0x10558a3e0>)>
+    │      └ <class 'google.genai.errors.APIError'>
+    └ <module 'google.genai.errors' from '/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-p...
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    │   │           │        │            │              └ <Response [404 Not Found]>
+    │   │           │        │            └ {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update you...
+    │   │           │        └ 404
+    │   │           └ <Response [404 Not Found]>
+    │   └ <classmethod(<function APIError.raise_error at 0x10558a520>)>
+    └ <class 'google.genai.errors.APIError'>
+  File "/Users/nova/.gemini/antigravity/scratch/khomdev_brand_monitor/.venv/lib/python3.12/site-packages/google/genai/errors.py", line 184, in raise_error
+    raise ClientError(status_code, response_json, response)
+          │           │            │              └ <Response [404 Not Found]>
+          │           │            └ {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update you...
+          │           └ 404
+          └ <class 'google.genai.errors.ClientError'>
+
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+2026-04-16 20:28:26.328 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='pringles'
+2026-04-16 20:28:26.857 | INFO     | __main__:brand_search:180 - Strict search results for 'pringles': 1 items found
+2026-04-16 20:28:32.561 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Pringles
+2026-04-16 20:28:32.562 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google']
+2026-04-16 20:28:34.660 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Pringles
+2026-04-16 20:28:42.046 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Pringles: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 20:28:42.364 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 20:28:56.938 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 20:44:19.237 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='nike'
+2026-04-16 20:44:19.948 | INFO     | __main__:brand_search:180 - Strict search results for 'nike': 1 items found
+2026-04-16 20:44:20.693 | INFO     | __main__:brand_info:193 - Brand info request: name='Nike'
+2026-04-16 20:44:21.083 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Nike'
+2026-04-16 20:44:22.523 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='ad'
+2026-04-16 20:44:22.904 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='adi'
+2026-04-16 20:44:23.022 | INFO     | __main__:brand_search:180 - Strict search results for 'ad': 1 items found
+2026-04-16 20:44:23.271 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='adid'
+2026-04-16 20:44:23.371 | INFO     | __main__:brand_search:180 - Strict search results for 'adi': 1 items found
+2026-04-16 20:44:23.844 | INFO     | __main__:brand_search:180 - Strict search results for 'adid': 1 items found
+2026-04-16 20:44:23.924 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='adidas'
+2026-04-16 20:44:24.416 | INFO     | __main__:brand_search:180 - Strict search results for 'adidas': 2 items found
+2026-04-16 20:44:34.067 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Nike
+2026-04-16 20:44:34.067 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-16 20:44:36.621 | INFO     | scraper:scrape:233 - Targeting competitor: Adidas AG
+2026-04-16 20:44:36.621 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Nike
+2026-04-16 20:44:36.626 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Nike
+2026-04-16 20:44:36.628 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Adidas AG
+2026-04-16 20:44:43.683 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Adidas AG: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:44:43.756 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Nike: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:44:44.511 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Nike: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 20:44:44.620 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 20:44:56.130 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 20:53:12.216 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='acer'
+2026-04-16 20:53:12.987 | INFO     | __main__:brand_search:180 - Strict search results for 'acer': 0 items found
+2026-04-16 20:53:15.235 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='ac'
+2026-04-16 20:53:15.851 | INFO     | __main__:brand_search:180 - Strict search results for 'ac': 0 items found
+2026-04-16 20:53:16.808 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='nvif'
+2026-04-16 20:53:17.220 | INFO     | __main__:brand_search:180 - Strict search results for 'nvif': 0 items found
+2026-04-16 20:53:17.562 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='nvidia'
+2026-04-16 20:53:18.001 | INFO     | __main__:brand_search:180 - Strict search results for 'nvidia': 3 items found
+2026-04-16 20:53:21.648 | INFO     | __main__:brand_info:193 - Brand info request: name='Nvidia'
+2026-04-16 20:53:21.890 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Nvidia'
+2026-04-16 20:53:24.087 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='ad'
+2026-04-16 20:53:24.657 | INFO     | __main__:brand_search:180 - Strict search results for 'ad': 1 items found
+2026-04-16 20:53:25.271 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='amd'
+2026-04-16 20:53:25.782 | INFO     | __main__:brand_search:180 - Strict search results for 'amd': 2 items found
+2026-04-16 20:53:28.728 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Nvidia
+2026-04-16 20:53:28.729 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-16 20:53:30.448 | INFO     | scraper:scrape:233 - Targeting competitor: AMD
+2026-04-16 20:53:30.449 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Nvidia
+2026-04-16 20:53:30.453 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Nvidia
+2026-04-16 20:53:30.457 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for AMD
+2026-04-16 20:53:36.770 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Nvidia: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:53:37.224 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for AMD: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:53:37.792 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Nvidia: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 20:53:37.884 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 20:54:06.685 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-16 20:54:55.047 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='nike'
+2026-04-16 20:54:55.490 | INFO     | __main__:brand_search:180 - Strict search results for 'nike': 1 items found
+2026-04-16 20:54:55.983 | INFO     | __main__:brand_info:193 - Brand info request: name='Nike'
+2026-04-16 20:54:56.331 | INFO     | __main__:brand_info:204 - Brand info fetched successfully for 'Nike'
+2026-04-16 20:54:57.945 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='adidas'
+2026-04-16 20:54:58.457 | INFO     | __main__:brand_search:180 - Strict search results for 'adidas': 2 items found
+2026-04-16 20:54:59.600 | INFO     | __main__:analyze_brand:221 - Starting analysis for brand: Nike
+2026-04-16 20:54:59.600 | INFO     | __main__:analyze_brand:225 - Scraping platforms: ['google', 'news']
+2026-04-16 20:55:01.407 | INFO     | scraper:scrape:233 - Targeting competitor: Adidas AG
+2026-04-16 20:55:01.409 | DEBUG    | scraper:_scrape_google_reviews:252 - Scraping Google Reviews for Nike
+2026-04-16 20:55:01.412 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Nike
+2026-04-16 20:55:01.421 | DEBUG    | scraper:_scrape_google_news:273 - Scraping Google News for Adidas AG
+2026-04-16 20:55:08.255 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Nike: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:55:08.281 | WARNING  | scraper:_scrape_google_news:288 - Google News scrape failed for Adidas AG: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.SoEx9c, div.g") to be visible
+
+2026-04-16 20:55:09.091 | WARNING  | scraper:_scrape_google_reviews:267 - Google Review scrape failed for Nike: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.g") to be visible
+
+2026-04-16 20:55:09.179 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
+2026-04-16 20:55:28.875 | INFO     | __main__:analyze_brand:232 - Analysis complete.

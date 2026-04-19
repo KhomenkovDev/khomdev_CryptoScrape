@@ -20,8 +20,8 @@ logger.add(sys.stdout, colorize=True, format="<green>{time:HH:mm:ss}</green> | <
 logger.add("logs/brand_monitor.log", rotation="10 MB", level="DEBUG")
 
 app = FastAPI(
-    title="Modern Brand Reputation Monitor",
-    description="AI-powered brand sentiment and strategic analysis tool.",
+    title="KhomDev CryptoScrape",
+    description="AI-powered Crypto Twitter (X) & Discord Sentiment Scraper for Web3 projects.",
     version="2.0.0"
 )
 

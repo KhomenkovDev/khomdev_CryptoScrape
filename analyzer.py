@@ -51,35 +51,35 @@ class BrandAnalyzer:
             return await self._generate_mock_analysis(brand_name, competitor_name)
 
         prompt = f"""
-        Analyze the following scraped market data for the brand: "{brand_name}".
-        {"Compare it against competitor: " + competitor_name if competitor_name else ""}
+        Analyze the following scraped Web3 community data for the project: "{brand_name}".
+        {"Compare it against competitor project: " + competitor_name if competitor_name else ""}
         
         Data to process:
         {json.dumps(scraped_data, indent=2)}
         
-        Provide a deep strategic sentiment report. 
+        Provide a deep Web3 sentiment report. Focus on token utility, community hype, developer activity (if applicable), and overall 'vibes'.
         Format your response as a valid JSON matching this schema:
         {{
             "brand_name": "{brand_name}",
-            "overall_sentiment": "...",
+            "overall_sentiment": "Bullish/Bearish/Neutral",
             "sentiment_score": 0-100,
             "platform_reports": {{
                 "platform": {{
                     "score": 0-100,
-                    "label": "Positive/Neutral/Negative",
-                    "summary": "...",
-                    "strengths": [],
-                    "weaknesses": []
+                    "label": "Bullish/Neutral/Bearish",
+                    "summary": "Summarize the community sentiment on this platform...",
+                    "strengths": ["e.g. strong whale interest", "vibrant community"],
+                    "weaknesses": ["e.g. FUD regarding unlock", "low engagement"]
                 }}
             }},
-            "strategic_suggestions": ["tip 1", "tip 2"],
+            "strategic_suggestions": ["tip 1 to improve token sentiment", "tip 2"],
             "marketing_roadmap": [
-                {{"title": "...", "description": "...", "priority": "High/Medium/Low", "category": "..."}}
+                {{"title": "Campaign Name", "description": "Community building idea...", "priority": "High/Medium/Low", "category": "PR/Governance/Social/Utility"}}
             ],
             "competitor_analysis": {{
                 "competitor_name": "{competitor_name if competitor_name else 'N/A'}",
-                "relative_sentiment": "Better/Worse/Similar",
-                "competitive_advantage": "...",
+                "relative_sentiment": "Stronger/Weaker/Similar",
+                "competitive_advantage": "What makes this project unique in the Web3 space?",
                 "threat_level": "Low/Medium/High"
             }} (only if competitor provided)
         }}

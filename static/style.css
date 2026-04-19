@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-    --bg-color: #05070a;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --accent-primary: #00f2fe;
-    --accent-secondary: #4facfe;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --success: #00ff88;
-    --warning: #ffcc00;
-    --danger: #ff4d4d;
-    --premium-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --bg-color: #05050A;
+    --card-bg: rgba(18, 18, 42, 0.4);
+    --accent-primary: #A855F7; /* KhomDev Purple */
+    --accent-secondary: #22D3EE; /* KhomDev Cyan */
+    --text-primary: #F9FAFB;
+    --text-secondary: #9CA3AF;
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --success: #34D399;
+    --warning: #FBBF24;
+    --danger: #F87171;
+    --premium-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
