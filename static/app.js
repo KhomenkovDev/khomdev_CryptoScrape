@@ -331,8 +331,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                const err = await response.json();
-                throw new Error(err.detail || 'Analysis failed');
+                let errorMsg = 'Analysis failed';
+                try {
+                    const contentType = response.headers.get("content-type");
+                    if (contentType && contentType.includes("application/json")) {
+                        const err = await response.json();
+                        errorMsg = err.detail || errorMsg;
+                    } else {
+                        errorMsg = `Server Error (${response.status}): The service might be overloaded or down. Please try again in a few moments.`;
+                    }
+                } catch (e) {
+                    errorMsg = `Server Error (${response.status})`;
+                }
+                throw new Error(errorMsg);
             }
 
             const data = await response.json();

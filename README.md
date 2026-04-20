@@ -1,4 +1,5 @@
 # KhomDev CryptoScrape 🕵️‍♂️
+![KhomDev CryptoScrape](screenshots/Screenshot%202026-04-19%20at%2020.40.39.png)
 
 AI-powered Crypto Twitter (X) & Discord Sentiment Scraper. Web3 projects are obsessed with community sentiment; this tool scrapes real-time mentions and analyzes the "vibe" of any token or project.
 

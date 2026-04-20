@@ -681,3 +681,5 @@ Call log:
 
 2026-04-16 20:55:09.179 | INFO     | __main__:analyze_brand:228 - Sending data to AI Analyzer...
 2026-04-16 20:55:28.875 | INFO     | __main__:analyze_brand:232 - Analysis complete.
+2026-04-19 17:29:55.527 | INFO     | __main__:brand_search:120 - Smart Brand search request: query='sol'
+2026-04-19 17:29:56.395 | INFO     | __main__:brand_search:183 - Strict search results for 'sol': 6 items found

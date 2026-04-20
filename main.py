@@ -118,14 +118,13 @@ async def brand_search(q: str = Query(..., min_length=2)):
     Prioritizes brands and companies over geographical or historical entities.
     """
     logger.info(f"Smart Brand search request: query='{q}'")
-    # Wikidata Entity Search is better for distinguishing brands/companies from regions
     url = "https://www.wikidata.org/w/api.php"
     params = {
         "action": "wbsearchentities",
         "search": q,
         "language": "en",
         "format": "json",
-        "limit": 10
+        "limit": 50
     }
     headers = {"User-Agent": "BrandMonitor/1.0 (https://github.com/user/brand_monitor)"}
     
@@ -139,7 +138,11 @@ async def brand_search(q: str = Query(..., min_length=2)):
             
             # Entity keywords to strictly validate as a brand/company
             positive_kws = {"brand", "company", "manufacturer", "business", "retailer", "products", "corporation", 
-                            "subsidiary", "chips", "beer", "software", "tech", "hardware", "conglomerate", "enterprise", "startup"}
+                            "subsidiary", "chips", "beer", "software", "tech", "hardware", "conglomerate", "enterprise", "startup",
+                            "blockchain", "cryptocurrency", "token", "protocol", "dao", "defi", "nft", "crypto", "platform", 
+                            "exchange", "wallet", "web3", "network", "ecosystem", "metaverse", "dapp", "service", "app", "application",
+                            "ledger", "node", "validator", "mining", "staking", "yield", "liquidity", "currency", "cash", "finance", 
+                            "asset", "system", "foundation", "open source", "project"}
             
             # Exclusion list: Stop results like countries, regions, people, or media from appearing
             negative_kws = {"human", "person", "actor", "musician", "singer", "athlete", "writer", "director", "country", 
@@ -155,18 +158,18 @@ async def brand_search(q: str = Query(..., min_length=2)):
                 mentions_commercial = any(kw in desc for kw in positive_kws)
                 mentions_negative   = any(kw in desc for kw in negative_kws)
                 
-                # STRICT FILTERING: 
-                # 1. Must NOT match any negative keywords (unless it also has strong commercial markers)
-                # 2. Must either have a commercial marker OR be the exact name of a known brand
+                # RELAXED FILTERING: 
+                # 1. If it has strong commercial markers, we trust it more
+                # 2. We only skip if it's strictly a person or location without any commercial context
                 
-                is_brand = (mentions_commercial and not mentions_negative)
+                is_brand = mentions_commercial
                 
-                # If it's a "country" or "person", we strictly skip it unless it's a very clear brand outlier
+                # If it's a "country" or "person" but HAS a commercial marker (like a tech company in a city), we keep it
                 if mentions_negative and not mentions_commercial:
                     continue
                     
                 # We only collect results that pass the "brand-ness" test
-                if is_brand or (len(desc) > 0 and mentions_commercial):
+                if is_brand or (len(desc) == 0 and not mentions_negative):
                     results.append({
                         "title": label,
                         "description": item.get("display", {}).get("description", {}).get("value", ""),
